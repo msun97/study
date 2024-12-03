@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html | table</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+<body>
+  <h1>HTML table</h1>
+  <h2>정의</h2>
+  <p>table 요소로 HTML 문서의 표(table)를 정의합니다.</p>
+  <table>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+    <tr>
+      <td>Row 1, Column 1</td>
+      <td>Row 1, Column 2</td>
+      <td>Row 1, Column 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Column 1</td>
+      <td>Row 2, Column 2</td>
+      <td>Row 2, Column 3</td>
+    </tr>
+    <tr>
+      <td>Row 3, Column 1</td>
+      <td>Row 3, Column 2</td>
+      <td>Row 3, Column 3</td>
+    </tr>
+  </table>
+  <p>이때 td는 테이블 데이터, tr은 각 테이블 행, th는 테일 헤더입니다.</p>
+  <hr>
+  <h2>테이블 border</h2>
+  <p>border 속성으로 table 요소의 border를 설정할 수 있습니다.</p>
+  <table border="1">
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+    <tr>
+      <td>Row 1, Column 1</td>
+      <td>Row 1, Column 2</td>
+      <td>Row 1, Column 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Column 1</td>
+      <td>Row 2, Column 2</td>
+      <td>Row 2, Column 3</td>
+    </tr>
+    <tr>
+      <td>Row 3, Column 1</td>
+      <td>Row 3, Column 2</td>
+      <td>Row 3, Column 3</td>
+    </tr>
+  </table>
+  <p>border-collapse로 이중 테두리를 피할 수 있습니다.</p>
+  <table border="1" border-collapse="collapse">
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+    <tr>
+      <td>Row 1, Column 1</td>
+      <td>Row 1, Column 2</td>
+      <td>Row 1, Column 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Column 1</td>
+      <td>Row 2, Column 2</td>
+      <td>Row 2, Column 3</td>
+    </tr>
+    <tr>
+      <td>Row 3, Column 1</td>
+      <td>Row 3, Column 2</td>
+      <td>Row 3, Column 3</td>
+    </tr>
+  </table>
+  <p>스타일 적용도 가능합니다.</p>
+  <table style="border: 1px solid #FF8551; border-collapse: collapse;">
+    <tr>
+      <th style="background-color: #FFDEDE;">Header 1</th>
+      <th style="background-color: #FFDEDE;">Header 2</th>
+      <th style="background-color: #FFDEDE;">Header 3</th>
+    </tr>
+    <tr>
+      <td style="background-color: #FAF0E4;">Row 1, Column 1</td>
+      <td style="background-color: #FAF0E4;">Row 1, Column 2</td>
+      <td style="background-color: #FAF0E4;">Row 1, Column 3</td>
+    </tr>
+  </table>
+  <p>테이블 테두리 둥글게 하려면 border-radius를 사용합니다.</p>
+  <table class="radius">
+    <tr>
+      <th style="background-color: #B9E0FF;">Header 1</th>
+      <th style="background-color: #B9E0FF;">Header 2</th>
+      <th style="background-color: #B9E0FF;">Header 3</th>
+    </tr>
+    <tr>
+      <td style="background-color: #8D9EFF;">Row 1, Column 1</td>
+      <td style="background-color: #8D9EFF;">Row 1, Column 2</td>
+      <td style="background-color: #8D9EFF;">Row 1, Column 3</td>
+    </tr>
+  </table>
+  <style>
+    .radius tr, .radius  th, .radius td{
+      border: 1px solid #8D72E1;
+      border-radius: 10px;
+    }
+  </style>
+  <p>border-style로 점선의 모양을 설정할 수 있습니다.</p>
+  <table class="dotted">
+    <tr>
+      <th style="background-color: #E8F0F2;">Header 1</th>
+      <th style="background-color: #E8F0F2;">Header 2</th>
+      <th style="background-color: #E8F0F2;">Header 3</th>
+    </tr>
+    <tr>
+      <td style="background-color: #A2DBFA;">Row 1, Column 1</td>
+      <td style="background-color: #A2DBFA;">Row 1, Column 2</td>
+      <td style="background-color: #A2DBFA;">Row 1, Column 3</td>
+    </tr>
+  </table>
+  <style>
+   .dotted tr, .dotted th, .dotted td{
+      border: 1px dotted #39A2DB;
+    }
+  </style>
+  <p>border-color로 테두리의 색을 설정할 수 있습니다.</p>
+  <table class="color">
+    <tr>
+      <th style="background-color: #F0ECE5;">Header 1</th>
+      <th style="background-color: #F0ECE5;">Header 2</th>
+      <th style="background-color: #F0ECE5;">Header 3</th>
+    </tr>
+    <tr>
+      <td style="background-color: #B6BBC4;">Row 1, Column 1</td>
+      <td style="background-color: #B6BBC4;">Row 1, Column 2</td>
+      <td style="background-color: #B6BBC4;">Row 1, Column 3</td>
+    </tr>
+  </table>
+  <style>
+   .color tr, .color th, .color td{
+      border: 1px solid #31304D;
+    }
+  </style>
+  <hr>
+  <h2>테이블 크기</h2>
+  <p>width, height 속성으로 table 요소의 크기를 조절할 수 있습니다.</p>
+  <table style="width: 50%; height: 50%;">
+    <tr>
+      <th style="background-color: #FAF8ED;">Header 1</th>
+      <th style="background-color: #FAF8ED;">Header 2</th>
+      <th style="background-color: #FAF8ED;">Header 3</th>
+    </tr>
+    <tr>
+      <td style="background-color: #F9B572;">Row 1, Column 1</td>
+      <td style="background-color: #F9B572;">Row 1, Column 2</td>
+      <td style="background-color: #F9B572;">Row 1, Column 3</td>
+    </tr>
+  </table>
+  <h3>테이블 열 너비</h3>
+  <p>th, td에도 스타일 적용이 가능합니다.</p>
+  <table style="width:100%">
+    <tr>
+      <th style="width:70%">Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+  </table>
+  <h3>테이블 행 높이</h3>
+  <p>tr에 style="height: 50px;"를 추가합니다.</p>
+  <table style="width:100%">
+    <tr style="height: 50px;">
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+    <tr style="height: 50px;">
+      <td>Row 1, Column 1</td>
+      <td>Row 1, Column 2</td>
+      <td>Row 1, Column 3</td>
+    </tr>
+    <tr style="height: 50px;">
+      <td>Row 2, Column 1</td>
+      <td>Row 2, Column 2</td>
+      <td>Row 2, Column 3</td>
+    </tr>
+  </table>
+  <hr>
+  <h2>padding and gap</h2>
+  <p>padding, margin, border-spacing, border-collapse, gap 속성으로 table 요소의 padding, margin, border-spacing, border-collapse, gap을 조절할 수 있습니다.</p>
+  <table style="width: 50%; border-collapse: collapse;">
+    <tr>
+      <th style="background-color: #99B080; padding: 10px; margin: 5px; border-spacing: 5px;">Header 1</th>
+      <th style="background-color: #99B080; padding: 10px; margin: 5px; border-spacing: 5px;">Header 2</th>
+      <th style="background-color: #99B080; padding: 10px; margin: 5px; border-spacing: 5px;">Header 3</th>
+    </tr>
+  </table>
+  <h3>셀 padding</h3>
+  <p>td, th에 style="padding: 10px;"를 추가합니다.</p>
+  <table style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th style="background-color: #748E63; color:white; padding: 10px; margin: 5px; border-spacing: 5px;">Header 1</th>
+      <th style="background-color: #748E63; color:white; padding: 10px; margin: 5px; border-spacing: 5px;">Header 2</th>
+      <th style="background-color: #748E63; color:white; padding: 10px; margin: 5px; border-spacing: 5px;">Header 3</th>
+    </tr>
+  </table>
+  <h3>셀 간격</h3>
+  <p>td, th에 style="border-spacing: 5px;"를 추가합니다.</p>
+  <table style="width:100%; border-collapse: collapse;">
+    <tr>
+      <th style="background-color: #F6D5D5; padding: 10px; margin: 5px; border-spacing: 5px;">Header 1</th>
+      <th style="background-color: #F6D5D5; padding: 10px; margin: 5px; border-spacing: 5px;">Header 2</th>
+      <th style="background-color: #F6D5D5; padding: 10px; margin: 5px; border-spacing: 5px;">Header 3</th>
+    </tr>
+  </table>
+  <hr>
+  <h2>Colspan & Rowspan</h2>
+  <p>colspan, rowspan 속성으로 table cell을 여러 행 및 열에 걸쳐 설정할 수 있다.</p>
+  <table style="width: 50%;">
+    <tr>
+      <th style="background-color: #B08FBB;">Header 1</th>
+      <th colspan="2" style="background-color: #B08FBB;">Header 2</th>
+    </tr>
+    <tr>
+      <td style="background-color: #CA498C; color:white;">Row 1, Column 1</td>
+      <td rowspan="2" style="background-color: #CA498C; color:white;">Row 1,2, Column 2</td>
+      <td style="background-color: #CA498C; color:white;">Row 1, Column 2</td>
+    </tr>
+    <tr>
+      <td style="background-color: #CA498C; color:white;">Row 2, Column 1</td>
+      <td style="background-color: #CA498C; color:white;">Row 2, Column 3</td>
+    </tr>
+  </table>
+  <hr>
+  <h2>테이블 스타일링</h2>
+  <h3>얼룩말 줄무늬</h3>
+  <p>테이블의 행마다 배경색을 추가할 수 있습니다. :nth-child(even)과 같은 선택기를 사용합니다. odd도 사용 가능합니다.</p>
+  <table class='css' style="width: 50%;">
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+    <tr>
+      <td>Row 1, Column 1</td>
+      <td>Row 1, Column 2</td>
+      <td>Row 1, Column 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Column 1</td>
+      <td>Row 2, Column 2</td>
+      <td>Row 2, Column 3</td>
+    </tr>
+  </table>
+  <style>
+    .css tr:nth-child(even) {
+      background-color: #8B2F8A;
+      opacity: 0.4;
+      color:white;
+    }
+    .css th:nth-child(odd), .css td:nth-child(odd) {
+      background-color: #FFB6C1;
+      opacity: 0.6;
+      color: black;
+    }
+  </style>
+  <h3>수평 분할선</h3>
+  <p>tr에 border-bottom을 추가합니다</p>
+  <table class='border' style="width: 50%;">
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+    <tr>
+      <td>Row 1, Column 1</td>
+      <td>Row 1, Column 2</td>
+      <td>Row 1, Column 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Column 1</td>
+      <td>Row 2, Column 2</td>
+      <td>Row 2, Column 3</td>
+    </tr>
+  </table>
+  <style>
+   .border tr {
+      border-bottom: 1px solid #FF9843;
+    }
+  </style>
+  <h3>hoverable table</h3>
+  <p>tr:hover style="background-color: #FF6723; color: white;"</p>
+  <table class='hover' style="width: 50%;">
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+    <tr>
+      <td>Row 1, Column 1</td>
+      <td>Row 1, Column 2</td>
+      <td>Row 1, Column 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Column 1</td>
+      <td>Row 2, Column 2</td>
+      <td>Row 2, Column 3</td>
+    </tr>
+  </table>
+  <style>
+    .hover tr:hover {
+      background-color: #FF9843;
+      color: white;
+    }
+  </style>
+  <hr>
+  <h2>테이블 col-group</h2>
+  <p>col-group tag를 사용하여 table header cell(th)를 그룹화할 수 있습니다.</p>
+  <table class='colgroup' style="width: 50%;">
+    <colgroup>
+      <col style="width: 20%;">
+      <col style="width: 30%;">
+      <col style="width: 50%;">
+    </colgroup>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+    <tr>
+      <td>Row 1, Column 1</td>
+      <td>Row 1, Column 2</td>
+      <td>Row 1, Column 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Column 1</td>
+      <td>Row 2, Column 2</td>
+      <td>Row 2, Column 3</td>
+    </tr>
+  </table>
+  <p>colgroup에는 width, visibility, background, border 속성의 CSS만 사용 가능합니다.</p>
+  <h3>다중 열 요소</h3>
+  <table>
+    <colgroup>
+      <col span="2" style="background-color: #FFDD95;">
+      <col span="3" style="background-color: #86A7FC;">
+    </colgroup>
+    <tr>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+      <th>FRI</th>
+      <th>SAT</th>
+      <th>SUN</th>
+    </tr>
+  </table>
+  <h3>빈 콜그룹</h3>
+  <table>
+    <colgroup>
+      <col span="3">
+      <col span="2" style="background-color:#3468C0; color:white;">
+    </colgroup>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+      <th>Header 4</th>
+    </tr>
+  </table>
+  <h3>열 숨기기</h3>
+  <table>
+    <colgroup>
+      <col span="2">
+      <col span="3" style="visibility: collapse;">
+    </colgroup>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+      <th>Header 4</th>
+      <th>Header 5</th>
+    </tr>
+</body>
+</html>

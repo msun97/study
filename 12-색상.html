@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML | Color</title>
+</head>
+<body>
+    <h1>색상</h1>
+    <h2>Colors</h2>
+    <h3>색상 이름</h3>
+    <p>색상 이름을 사용하여 색상을 지정할 수 있다.</p>
+    <div style="color:tomato">토마토</div>
+    <div style="color:orange">주황색</div>
+    <div style="color:dodgerblue">도저블루</div>
+    <div style="color:mediumaquamarine">중간바다녹색</div>
+    <div style="color:gray">회색</div>
+    <div style="color:slateblue">슬레이트 블루</div>
+    <h3>배경색</h3>
+    <div style="text-align:center; width:90%; height:20px; background-color:aquamarine; padding:5px;">
+        이렇게 색상 지정이 가능하답니다.
+    </div>
+    <h3>테두리 색상</h3>
+    <div style="border: 5px solid tomato;">
+        테두리 5px, tomato
+    </div>
+    <h3>색상 값</h3>
+    <div style="text-align:center; width:90%; height:20px; background-color:RGB(4 5,28,5); padding:5px; color:white;">RGB(45,28,5)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:HSL(45,100%,50%); padding:5px;">HSL(45,100%,50%)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:#E4EDDB; padding:5px;">#E4EDDB</div>
+    <p>알파 값은 불투명도를 조절한다</p>
+    <div style="text-align:center; width:90%; height:20px; background-color:RGBA(45,28,5, 0.5); padding:5px; color:white;">RGBA(45,28,5, 0.5);</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsla(45,100%,50%,0.5); padding:5px;">HSLA(45,100%,50%,0.5);</div>
+    <hr>
+    <h2>RGB 및 RGBA</h2>
+    <h3>RGB 색상값</h3>
+    <p>rgb(빨강, 초록, 파랑)이며 각 매개변수는 0~255 사이의 값으로 강도를 정의한다.</p>
+    <div style="text-align:center; width:90%; height:20px; background-color:rgb(11, 192, 248); padding:5px; color:white;">rgb(11,192,248)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:rgb( 6, 150, 153); padding:5px; color:white;">rgb(6,150,153)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:rgb(90, 172, 227); padding:5px; color:white;">rgb(90,172,227)</div>
+    <h3>회색</h3>
+    <p>회색은 세 가지 매개변수 모두 동일한 값을 사용한다.</p>
+    <div style="text-align:center; width:90%; height:20px; background-color:rgb(128, 128, 128); padding:5px; color:white;">rgb(128,128,128)</div>
+    <h3>RGBA 색상값</h3>
+    <p>rgba(빨강, 초록, 파랑, 불투명도)이며 각 매개변수는 0~255 사이의 값으로 강도를 정의하고, 불투명도는 0.0~1.0 사이의 값으로 0.0은 완전 투명, 1.0은 완전 불투명</p>
+    <div style="text-align:center; width:90%; height:20px; background-color:rgba(11, 192, 248, 0.5); padding:5px; color:white;">rgba(11,192,248, 0.5)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:rgba(6, 150, 153, 0.5); padding:5px; color:white;">rgba(6,150,153, 0.5)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:rgba(90, 172, 227, 0.5); padding:5px; color:white;">rgba(90,172,227, 0.5)</div>
+    <hr>
+    <h2>HEX 색상</h2>
+    <h3>16진수 RGB 색상값</h3>
+    <p>16진수 RGB 색상값은 #RRGGBB 형식으로 00~FF 사이의 16진수 값으로 채도를 정의한다.</p>
+    <div style="text-align:center; width:90%; height:20px; background-color:#307672; padding:5px; color:white;">#307672</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:#144D53; padding:5px; color:white;">#144D53</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:#1A3C40; padding:5px; color:white;">#1A3C40</div>
+    <p>회색의 경우 매개변수 모두에 동일한 값을 사용한다.</p>
+    <div style="text-align:center; width:90%; height:20px; background-color:#808080; padding:5px; color:white;">#808080</div>
+    <hr>
+    <h2>HSL 및 HSLA 색상</h2>
+    <h3>HSL 색상값</h3>
+    <p>HSL(색상, 채도, 밝기)이다. 색상은 0~360 사이이며 0은 빨간색, 120은 초록색, 240은 파란색이다. 채도와 명도는 0~100% 사이이다.</p>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsl(120, 100%, 50%); padding:5px; color:white;">HSL(120,100%,50%)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsl(240, 100%, 50%); padding:5px; color:white;">HSL(240,100%,50%)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsl(360, 100%, 50%); padding:5px; color:white;">HSL(360,100%,50%)</div>
+    <h3>채도</h3>
+    <p>회색은 채도로 결정하며 0%는 완전히 회색, 100% 순수한 색상이다.</p>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsl(135, 0%, 75%); padding:5px;">HSL(135,0%,75%)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsl(135, 20%, 75%); padding:5px;">HSL(135,20%,75%)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsl(135, 40%, 75%); padding:5px;">HSL(135,40%,75%)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsl(135, 60%, 75%); padding:5px;">HSL(135,60%,75%)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsl(135, 80%, 75%); padding:5px;">HSL(135,80%,75%)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsl(135, 100%, 75%); padding:5px;">HSL(135,100%,75%)</div>
+    <h3>명도</h3>
+    <p>명도는 0%는 완전히 검정, 100%는 완전히 하얀색이다.</p>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsl(135, 100%, 100%); padding:5px; color:black;">HSL(135,100%,100%)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsl(135, 100%, 75%); padding:5px; color:black;">HSL(135,100%,75%)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsl(135, 100%, 50%); padding:5px; color:black;">HSL(135,100%,50%)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsl(135, 100%, 25%); padding:5px; color:white;">HSL(135,100%,25%)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsl(135, 100%, 10%); padding:5px; color:white;">HSL(135,100%,10%)</div>
+    <h3>HSLA 색상 값</h3>
+    <p>HSLA(색상, 채도, 밝기, 불투명도)이다. HSLA(HSL, alpha)로 0~100% 사이의 100% 값을 채도를 정의하고, alpha는 0.0~1.0 사이의 값으로 0.0은 완전 투명, 1.0은 완전 불투명이다.</p>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsla(120, 100%, 50%, 0.5); padding:5px; color:white;">HSLA(120,100%,50%, 0.5)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsla(240, 100%, 50%, 0.5); padding:5px; color:white;">HSLA(240,100%,50%, 0.5)</div>
+    <div style="text-align:center; width:90%; height:20px; background-color:hsla(360, 100%, 50%, 0.5); padding:5px; color:white;">HSLA(360,100%,50%, 0.5)</div>
+
+
+</body>
+</html>

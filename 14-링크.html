@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Html | Link</title>
+</head>
+<body>
+  <h1>Links</h1>
+  <h2>hyperlinks</h2>
+  <p>
+    <a href="https://www.naver.com" target="_blank">네이버</a> : 네이버 페이지로 이동합니다.
+  </p>
+  <h2>링크 구문</h2>
+  <p>a태그로 하이퍼링크를 정의한다. 구문은 다음과 같다. a href="url"</p>
+  <h2>target 속성</h2>
+  <p>
+    <a href="https://www.daum.net" target="_blank">다음</a> : 새 창(target="_blank")에서 다음 페이지로 이동합니다.
+    <a href="https://www.kakao.com" target="_parent">카카오</a> : 부모 프레임(traget="_parent")에서 이동합니다.
+    <a href="https://www.google.com" target="_self">구글</a> : 현재 탭(target="_self")에서 이동합니다.
+    <a href="https://www.naver.com" target="_top">네이버</a> : 전체 본문(target="_top")에서 이동합니다.
+  </p>
+  <h2>절대 url과 상대 url</h2>
+  <p>
+    <a href="https://www.naver.com">절대 url</a> : https://www.naver.com/
+    <a href="about.html">상대 url</a> : about.html (현재 url의 상대 경로)
+  </p>
+  <h2>img 링크</h2>
+  <p>
+    <img src="https://i.namu.wiki/i/gfWGDbMtgqXNa1goJaUVcnbZaRavFLeSY8LWuCg5PRKDDEIAeH2sWQdGKtkWhSLJUN6cY9BRG-EUokfzc_u0cGWqXymm3mYwYpyADBw0U41WLgKM1JLYEJkl63SN1fPV34QTnbIzlqVbzjyGZoTBMA.webp" alt="이미지"> : 파일을 img 태그로 삽입합니다.
+  </p>
+  <h2>이메일 주소 링크</h2>
+  <p>
+    <a href="mailto:admin@example.com">관리자 김미선</a> : admin@example.com 으로 이메일 전송합니다.
+  </p>
+  <h2>링크 버튼</h2>
+  <p>
+    <button onclick="document.location='www.naver.com'">네이버</button>
+  </p>
+  <h2>링크 제목</h2>
+  <p>
+    <a href="https://www.naver.com" title="네이버로 이동합니다.">네이버</a>
+  </p>
+  <hr>
+  <h1>링크 - 다른 색상</h1>
+  html 링크는 방문 여부, 방문하지 않음, 활성화 여부에 따라 다른 색상으로 표시된다.
+  <h2>링크 색상</h2>
+  <p>
+    기본적인 설정은 다음과 같다
+    <li>방문하지 않은 링크는 밑줄이 그어지고 파란색으로 표시된다.</li>
+    <li>방문한 링크는 보라색으로 표시된다.</li>
+    <li>활성화된 링크는 빨간색으로 표시된다.</li>
+    css로 색상을 변경할 수 있다.
+    <a href="naver.com" class="link">네이버</a>
+    <style>
+      a.link {
+        color: #438A70;
+      }
+      a.link:visited {
+        color: #52CEBA;
+      }
+      a.link:active {
+        color: #8AFFB4;
+      }
+    </style>
+  </p>
+  <h2>링크 버튼</h2>
+  <p>링크 버튼도 CSS로 스타일링 가능하다.
+    <button class="button">네이버</button>
+    <style>
+     .button {
+        background-color: #FAF0E4;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+      }
+     .button:hover {
+        background-color: #9BCDD2;
+      }
+    </style>
+  </p>
+  <hr>
+  <h1>북마크 만들기</h1>
+  <p>link로 북마크를 만들 수 있다. #요소id를 링크로 사용하면 해당 요소로 이동한다.</p>
+</body>
+</html>

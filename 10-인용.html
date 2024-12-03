@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html | 인용</title>
+</head>
+<body>
+    <h1>인용 및 인용 요소</h1>
+    <blockquote cite="http://en.wikipedia.org/wiki/">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores omnis laborum odio magni perspiciatis vero ipsam explicabo labore natus. Repellat qui nulla, similique cumque quisquam ea dolor sunt adipisci.
+    </blockquote>
+    <p>인용문의 출처: <a href="http://en.wikipedia.org/wiki/">Wikipedia</a></p>
+    <p>blockquote 요소는 cite 속성을 사용하여 출처를 표시할 수 있다.</p>
+    <hr>
+    <h2>짧은 인용문을 위한 q</h2>
+    <p>
+        <q>
+            "Innovation distinguishes between a leader and a follower." - George Orwell
+        </q>
+    </p>
+    <hr>
+    <h2>abbr 약어</h2>
+    <p>
+        abbr태그는 약어나 두문자어를 정의한다.
+        <abbr title="World Wide Web">WWW</abbr>
+    </p>
+    <hr>
+    <h2>연락처 정보</h2>
+    <p>
+        adress태그로 연락처 정보(이메일, URL, 실제 주소, 전화번호, SNS 핸들 등)을 정의한다. 일반적으로 기울임꼴로 렌더링 되고 줄 바꿈이 추가된다.
+        <address>
+            <a href="mailto:info@example.com">info@example.com</a><br>
+            <a href="https://www.example.com">www.example.com</a><br>
+            123 Main St.<br>
+            Anytown, CA 12345<br>
+            (123) 456-7890  
+        </address>
+    </p>
+    <hr>
+    <h2>작품 제목</h2>
+    <p>
+        <cite>
+            "To be or not to be" by Albert Einstein
+        </cite>
+        <p>
+            <dfn>cite</dfn>요소는 작품의 제목을 정의한다.
+        </p>
+    </p>
+    <hr>
+    <h2>양방향 오버라이드(Bi-Directional Override)</h2>
+    <p>
+        <bdo dir="rtl">
+            this text will be writte from right to left.
+        </bdo>
+    </p>
+</body>
+</html>
