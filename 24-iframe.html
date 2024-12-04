@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html | Iframe</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+<body>
+  <h1>Iframe</h1>
+  <p>iframe 요소를 사용하면 HTML 문서를 iframe 내에 embed할 수 있습니다.</p>
+  <iframe class='border' src="https://www.google.com" width="800" height="600"></iframe>
+  <p>ifrmae은 src(링크)속성과 title(제목)속성을 가지고 있습니다. width와 height로 크기를 지정할 수 있으며 style 속성을 추가할 수 있습니다.</p>
+  <style>
+    iframe.border {
+      border: 1px solid #C1F6E7;
+    }
+  </style>
+  <h2>Iframe 링크 대상</h2>
+  <p>a태그의 target 속성으로 iframe을 참조할 수 있습니다. 이때 traget에는 ifrmae의 이름이 들어가야 합니다.</p>
+  <a href="https://www.naver.com" target="myIframe">네이버</a>
+  <iframe id="myIframe" src="https://www.google.com" width="800" height="600"></iframe>
+  <style>
+    iframe#myIframe {
+      border: 1px solid #FFCBCB;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: box-shadow 0.5s ease-in-out;
+      cursor: pointer;
+      background-color: #BB7171;
+      padding: 10px;
+      text-align: center;
+      color: #4E3440;
+      font-size: 20px;
+      user-select: none;
+      white-space: nowrap;
+    }
+  </style>
+</body>
+</html>

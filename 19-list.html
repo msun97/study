@@ -32,5 +32,181 @@
             <dt>term 3</dt>
             <dd>description 3</dd>
         </dl>
+        <hr>
+        <h1>순서 없는 목록</h1>
+        <h2>순서 없는 목록</h2>
+        <p>ul, 태그와 list-item(li)로 unordered list를 정의할 수 있습니다.</p>
+        <ul style="list-style-type: none;">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <h2>목록 항목 Marker</h2>
+        <p>list-style-type 속성으로 unordered list의 marker(기본: disc)를 변경할 수 있습니다.</p>
+        <ul style="list-style-type: circle;">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <ul style="list-style-type: decimal;">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <ul style="list-style-type: lower-alpha;">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <ul style="list-style-type: lower-roman;">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <ul style="list-style-type: upper-alpha;">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <ul style="list-style-type: upper-roman;">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <h2>중첩된 목록</h2>
+        <p>nested unordered list(ul)를 정의할 수 있습니다.</p>
+        <ul>
+            <li>item 1
+                <ul>
+                    <li>sub item 1</li>
+                    <li>sub item 2</li>
+                </ul>
+            </li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <h2>수평 목록</h2>
+        <p>CSS를 사용하여 정의 가능합니다.</p>
+        <style>
+            ul.horizon {
+                display: flex;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                background-color: #f9f9f9;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 300px;
+                margin: 0 auto;
+                text-align: left;
+                font-size: 18px;
+                line-height: 24px;
+                font-family: Arial, sans-serif;
+                color: #333;
+                transition: background-color 0.3s ease-in-out;
+                cursor: pointer;
+                &:hover {
+                    background-color: #ddd;
+                }
+                li {
+                margin-bottom: 10px;
+                padding-left: 20px;
+                background-color: #f9f9f9;
+                border-left: 5px solid #ccc;
+                transition: background-color 0.3s ease-in-out;
+                &:hover {
+                    background-color: #ddd;
+                }
+                a {
+                    color: #333;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: #000;
+                }
+                ul {
+                    list-style-type: disc;
+                    margin-left: 20px;
+                }
+                li {
+                    margin-bottom: 0;
+                }
+
+            }
+            }
+            
+        </style>
+        <ul class="horizon">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <hr>
+        <h1>순서 있는 목록</h1>
+        <h2>순서 있는 목록</h2>
+        <p>ol, 태그와 list-item(li)로 ordered list를 정의할 수 있습니다.</p>
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+        <h2>Type 속성</h2>
+        <p>ol 태그의 type 속성으로 ordered list의 type(기본: 1)를 변경할 수 있습니다.</p>
+        <ol type="A">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+        <ol type="a">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+        <ol type="I">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+        <ol type="i">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+        <h2>목록 계산 제어</h2>
+        <p>start 속성으로 지정된 숫자부터 세기를 시작할 수 있습니다.</p>
+        <ol start="5">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+        <h2>중첩된 목록</h2>
+        <p>nested ordered list(ol)를 정의할 수 있습니다.</p>
+        <ol>
+            <li>item 1
+                <ol>
+                    <li>sub item 1</li>
+                    <li>sub item 2</li>
+                </ol>
+            </li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+        <hr>
+        <h1>Description List</h1>
+        <h2>Description List</h2>
+        <p>dl, dt, dd로 description list를 정의합니다. dl은 description 목록을 정의하고 dt는 용어(이름)을 정의하며 dd는 각 용어를 설명합니다.</p>
+        <dl>
+            <dt>term 1</dt>
+            <dd>description 1</dd>
+            <dt>term 2</dt>
+            <dd>description 2</dd>
+            <dt>term 3</dt>
+            <dd>description 3</dd>
+        </dl>
     </body>
 </html>

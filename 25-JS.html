@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html | JS</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+<body>
+  <h1>자바스크립트</h1>
+  <h2>script 태그</h2>
+  <p>script 태그는 HTML 문서 내 JavaScript 코드를 포함합니다. 아래의 예제는 id=demo인 요소에 hello JavaScript를 씁니다.</p>
+  <div id="demo">
+    <script>
+      document.getElementById('demo').innerHTML = 'Hello JavaScript!';
+    </script>
+  </div>
+  <div class="script">
+  script
+    document.getElementById('demo').innerHTML = 'Hello JavaScript!';
+  /scirpt 
+  </div>
+  <h2>자바스크립트로 할 수 있는 것</h2>
+  <ul>
+    <li>콘텐츠 변경</li>
+    <li>스타일 변경</li>
+    <li>속성 변경</li>
+  </ul>
+  <h2>nosciprt 태그</h2>
+  <p>noscript 태그는 JavaScript를 지원하지 않는 브라우저에서 표시될 대체 콘텐츠를 정의한다.</p>
+  <noscript>
+    <p>JavaScript를 사용하실 수 없습니다.</p>
+  </noscript>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #E8BCB9;
+      color: #432E54;
+      font-size: 24px;
+      transition: background-color 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    #demo {
+      position: relative;
+      width: 200px;
+      height: 100px;
+      background-color: #4B4376;
+      color: #E8BCB9;
+      padding: 20px;
+      text-align: center;
+      line-height: 100px;
+      border-radius: 5px;
+      transition: background-color 0.5s ease-in-out;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      margin-bottom: 10px;
+    }
+    #demo:hover {
+      background-color: #AE445A;
+      color: #E8BCB9;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      transform: scale(1.05);
+      transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+      cursor: pointer;
+      z-index: 100;
+      opacity: 0.9;
+    }
+    #demo:active {
+      background-color: #7F2737;
+      color: #E8BCB9;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transform: scale(1.02);
+      transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+      cursor: pointer;
+      z-index: 100;
+      opacity: 0.8;
+    }
+  </style>
+</body>
+</html>
