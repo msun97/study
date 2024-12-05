@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html | Head</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+<body>
+  <h1>Head Element</h1>
+  <p>Head 요소는 HTML 문서의 head section(헤더)에 위치합니다. Head 메타데이터는 HTML 문서에 대한 데이터다. 문서 제목, 문자 집합, 스타일, 스크립트 및 기타 메타 정보를 정의한다.</p>
+  <h2>title</h2>
+  <p>title 요소는 HTML 문서의 제목 표시줄, 페이지 탭에 표시되는 제목을 정의합니다. 이는 SEO에 매우 중요하다. </p>
+  <h2>style</h2>
+  <p>style 요소의 CSS는 HTML 요소에 대한 스타일을 정의합니다.</p>
+  <h2>link</h2>
+  <p>link 요소를 사용하면 CSS, JS, IMG, FONT, ETC. 파일을 HTML 문서에 로드할 수 있습니다.</p>
+  <h2>meta</h2>
+  <p>meta 요소는 HTML 문서에 대한 메타데이터를 정의합니다. meta 요소는 SEO, viewport, description, author, keywords, etc.를 정의할 수 있습니다.</p>
+  <h2>뷰포트</h2>
+  <p>viewport meta tag를 사용하면 HTML 문서를 viewport size(화면 크기)에 맞게 조절할 수 있습니다. viewport meta tag는 viewport-width, viewport-height, initial-scale, minimum-scale, maximum-scale, user-scalable, etc.를 정의할 수 있습니다.</p>
+  <h2>script</h2>
+  <p>script 요소를 사용하면 JavaScript를 HTML 문서에 로드할 수 있습니다.</p>
+  <h2>base</h2>
+  <p>base 요소를 사용하면 HTML 문서에서 링크를 relative path로 지정할 수 있습니다.</p>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #FFF4C9;
+      color: #709053;
+      font-size: 24px;
+      transition: background-color 0.5s ease-in-out;
+      cursor: pointer;
+      user-select: none;
+      border: none;
+      white-space: pre-wrap;
+      word-break: break-all;
+      padding: 20px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      animation: colorChange 2s infinite;
+      overflow-x: auto;
+      max-width: 800px;
+      text-align: left;
+    }
+    h1, h2, p {
+      margin: 10px 0;
+      text-align: left;
+      line-height: 1.5;
+      font-size: 18px;
+      user-select: none;
+      border: none;
+      transition: color 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    h2 {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 20px;
+      user-select: none;
+      border: none;
+      transition: color 0.5s ease-in-out;
+      cursor: pointer;
+      white-space: pre-wrap;
+      word-break: break-all;
+      animation: colorChange 2s infinite;
+    }
+    p {
+      color: #81AE64;
+      margin-bottom: 20px;
+      user-select: none;
+    }
+    @keyframes colorChange {
+      0% {
+        background-color: #FFF4C9;
+      }
+      50% {
+        background-color: #D3E3A1;
+      }
+      100% {
+        background-color: #FFF4C9;
+      }
+    }
+  </style>
+</body>
+</html>
